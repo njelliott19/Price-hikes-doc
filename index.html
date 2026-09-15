@@ -233,6 +233,22 @@
   .meta-list dt:first-child{margin-top:0;}
   .meta-list dd{margin:4px 0 0; color:var(--paper);}
 
+  .portrait{
+    aspect-ratio:3/4;
+    border:1px solid var(--line);
+    border-radius:2px;
+    overflow:hidden;
+    background:
+      repeating-linear-gradient(135deg, var(--ink-soft) 0 2px, transparent 2px 14px);
+  }
+  .portrait img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+  }
+
   /* ---------- Footer / Sources ---------- */
   footer{padding:56px 0 72px;}
   .footer-row{
@@ -324,7 +340,7 @@
   <div class="wrap">
     <h2 class="h">The premise</h2>
     <p class="lede">A small number of households in Baltimore and DC neighborhoods carry this film. Families for whom a rising electric bill isn't an inconvenience but a genuine financial cliff. Their kitchens and their bills are where the story starts.</p>
-    <p class="lede">From there, it follows two threads outward, both converging on Washington: where the demand driving prices up is actually coming from, and why the safety net meant to catch these households is itself under strain. The region makes this possible and is home to some of the country's highest-burden low-income households, minutes from the data center corridor driving the price spike, and the seat of the federal decisions shaping the outcome.</p>
+    <p class="lede">From there, it follows two threads outward, both focusing on Washington: where the demand driving prices up is actually coming from, and why the safety net meant to catch these households is itself under strain. The region makes this possible and is home to some of the country's highest-burden low-income households, minutes from the data center corridor driving the price spike, and the seat of the federal decisions shaping the outcome.</p>
   </div>
 </section>
 
@@ -417,6 +433,9 @@
   <div class="wrap">
     <h2 class="h">About the filmmaker</h2>
     <div class="about">
+      <div class="portrait">
+        <img src="images/profile_photo.jpg" alt="Portrait of the filmmaker">
+      </div>
       <div>
         <p class="lede">I'm a video journalist at the Baltimore Fishbowl, an award-winning daily local news website, where I produce horizontal and vertical pieces. I recently produced a documentary on science funding cuts with the Emmy-winning documentary newsroom, Evident Media. I have a passion for video journalism and documentary filmmaking, focusing on people-centered stories and injustices. I'm a graduate of journalism from the University of Maryland, College Park.</p>
       </div>
